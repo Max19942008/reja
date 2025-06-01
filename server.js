@@ -21,7 +21,7 @@ app.post("/create-item", (req,res) =>{
 console.log(req.body);
 res.json({test: "success"});
 });
-app.set('views', path.join(__dirname, 'views'));
+
 
 app.get("/", function (req ,res) {
   res.render("harid");
