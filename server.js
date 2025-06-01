@@ -17,13 +17,16 @@ app.set("view engine","ejs");
 
 
 //4 routing 
-app.get("/hello", function(req , res) {
-console.log(`<h1 style="backgroun:red >HELLO WORLD</h1>`);
+app.post("/create-item", (req,res) =>{
+console.log(req.body);
+res.json({test: "success"});
+});
+app.set('views', path.join(__dirname, 'views'));
+
+app.get("/", function (req ,res) {
+  res.render("harid");
 });
 
-app.get("/gift", function(req , res) {
-console.log(`<h1 style="backgroun:red >siz sovgalar bolimidasiz</h1>`);
-});
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function() {
