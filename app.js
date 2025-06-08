@@ -30,6 +30,12 @@ app.set("view engine","ejs");
 
 
 //4 routing 
+
+app.get("/author",(req, res) => {
+  res.render("author",{user: user});
+})
+
+
 app.post("/create-item", (req,res) => {
   console.log('user entered/create-item');
 console.log(req.body);

@@ -1,173 +1,317 @@
-<div>hello world</div>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-compatible" content="IE=edge">
-<meta name="viewport" content="width=device-witdth, initial-scale=1.0">
-
-<link rel ="stylesheet" href ="/main.css">
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<title>portofolia</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/main.css" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+crossorigin="anonymous"
+></script>
+<title>Portfolio</title>
 </head>
-
-
 <body>
 <div class="frame">
 <div class="main_frame">
-  <div class="left_frame">
+<div class="left_frame">
+<div class="container">
+<div class="profile">
+<img class="avatar" src="/author/images/Profile.svg" alt="" />
+<div class="name"><%=user.name%></div>
+<div class="profession"><%=user.profession%></div>
+<div class="icons">
+<div class="icon">
+<a
+target="_blank"
+title="Facebook account"
+,
+>
+<i class="fa-brands fa-facebook-f"></i
+></a>
+</div>
+<div class="icon">
+<a href=""> <i class="fa-brands fa-instagram"></i></a>
+</div>
+<div class="icon">
+<a href=""> <i class="fa-brands fa-twitter"></i></a>
+</div>
+<div class="icon">
+<a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<div class="icon">
+<a href=""> <i class="fa-brands fa-youtube"></i></a>
+</div>
+<div class="icon">
+<a href=""> <i class="fa-brands fa-dribbble"></i></a>
+</div>
+</div>
+</div>
+<div class="margener"></div>
+<div class="personal_info">
+<div class="line">
+<div class="main_caetegory">Age:</div>
+<div class="info"><%=user.age%></div>
+</div>
+<div class="line">
+<div class="main_caetegory">Residence:</div>
+<div class="info"><%=user.residence%></div>
+</div>
+<div class="line">
+<div class="main_caetegory">Freelance:</div>
+<div class="info" style="color: rgb(126, 185, 66)">
+Available
+</div>
+</div>
+<div class="line">
+<div class="main_caetegory">Address:</div>
+<div class="info"><%=user.address%></div>
+</div>
+</div>
+<div class="margener"></div>
+<div class="languages">
+<strong>Languages</strong>
+<div class="langs">
+<div class="lan">
+<div><%=user.languages[0]%></div>
+<p>100%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 217px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.languages[1]%></div>
+<p>80%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 208px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.languages[2]%></div>
+<p>60%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 190px"></div>
+</div>
+</div>
+</div>
+<div class="margener"></div>
+<div class="languages">
+<strong>Skills</strong>
+<div class="langs">
+<div class="lan">
+<div><%=user.skills[0]%></div>
+<p>90%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 209px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.skills[1]%></div>
+<p>85%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 207px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.skills[2]%></div>
+<p>80%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 201px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.skills[3]%></div>
+<p>75%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 187px"></div>
+</div>
+</div>
+<div class="langs">
+<div class="lan">
+<div><%=user.skills[4]%></div>
+<p>85%</p>
+</div>
+<div class="percent">
+<div class="percent_degree" style="width: 207px"></div>
+</div>
+</div>
+</div>
+<div class="margener"></div>
 
-    <div class="left_1">
-      <div class="left_1-1">
-        <img src="images/profile.png" width="156px" height="142px" alt="">
-      </div>
-      <div class="left_1-2"> <%=user.name%> </div>
-      <div class="left_1-3"><%=user.profession%></div>
-      <div class="left-icons">
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Facebook.svg" class="icon-1"></div>
-        </a>
-
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Instagram.svg" class="icon-1"></div>
-        </a>
-
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Twitter.svg" class="icon-1"></div>
-        </a>
-
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Linkeding.svg" class="icon-1"></div>
-        </a>
-
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Youtube.svg" class="icon-1"></div>
-        </a>
-
-        <a class="link_href" href="">
-          <div class="icon"> <img src="icon/Dribbble.svg" class="icon-1"></div>
-        </a>
-
-      </div>
-      
-    </div>
-    <div class="marginer"></div>
-     
-     <div class="left_2">
-      <div class="left_2-1">
-        <div class="age">Age:</div>
-        <div class="age_n">24</div>
-      </div>
-
-      <div class="left_2-2">
-        <div class="residence">residence:</div>
-        <div class="country"> <%=user.residence%> </div>
-      </div>
-
-      <div class="left_2-3">
-        <div class="freelance"> Freelance:</div>
-        <div class="available"> Available </div>
-      </div>
-
-      <div class="left_2-4">
-        <div class="adress">Adress: </div>
-        <div class="adress_1"> <%=user.adress%> </div>
-      </div>
-     </div>
-     <div class="marginer"></div>
-
-     <div class="left_3">
-      <div class="left_3-1">Languages</div>
-      <div class="left_3-2">
-        <div class="left_3_2-1"><span><%=user.languages[0]%></span></div>
-        <div class="left_3_2-2"> 100%</div>
-      </div>
-      <div class="left_3-3"></div>
-
-      <div class="left_3-4">
-      <div class="left_3_4-1"><%=user.languages[1]%></div>
-      <div class="left_3_4-2"> 80%</div>
-      </div>
-      <div class="left_3-5"></div>
-
-      <div class="left_3-6">
-        <div class="left_3_6-1"><%=user.languages[2]%></div>
-        <div class="left_3_6-2">100%</div>
-      </div>
-      <div class="left_3-7"></div>
-     </div>
-     <div class="marginer"></div>
-
-     <div class="left_4">
-      <div class="left_4-1">Skills</div>
-
-      <div class="left_4-2">
-        <div class="left_4_2-1"><%=user.skills[0]%></div>
-        <div class="left_4_2-2"> 90%</div>
-      </div>
-      <div class="left_4-3"></div>
-
-      <div class="left_4-4">
-        <div class="left_4_4-1"><%=user.skills[1]%></div>
-        <div class="left_4_4-2"> 100%</div>
-      </div>
-      <div class="left_4-5"></div>
-
-      <div class="left_4-6">
-        <div class="left_4_6-1"><%=user.skills[2]%></div>
-        <div class="left_4_6-2"> 80%</div>
-      </div>
-      <div class="left_4-7"></div>
-
-      <div class="left_4-8">
-        <div class="left_4_8-1"><%=user.skills[3]%></div>
-        <div class="left_4_8-2"> 80%</div>
-      </div>
-      <div class="left_4-9"></div>
-
-      <div class="left_4-10">
-        <div class="left_4_10-1"><%=user.skills[4]%></div>
-        <div class="left_4_10-2"> 90%</div>
-      </div>
-      <div class="left_4-11"></div>
-
-     </div>
-     <div class="marginer"></div>
-
-     <div class="left_5">
-      <div class="left_5-1"> Extra Skills </div>
-
-      <div class="left_5-2">
-        <div class="left_5_2-1"> <img src="icon/icons.svg"></div>
-        <div class="left_5_2-2"><%=user.extra_skills[0]%>,  <%=user.extra_skills[1]%></div>
-      </div>
-
-      <div class="left_5-3">
-        <div class="left_5_3-1"> <img src="icon/icons.svg"></div>
-        <div class="left_5_3-2"><%=user.extra_skills[2]%> </div>
-      </div>
-
-      <div class="left_5-4">
-        <div class="left_5_4-1"> <img src="icon/icons.svg"></div>
-        <div class="left_5_4-2"><%=user.extra_skills["3"]%> </div>
-      </div>
-
-      <div class="left_5-5">
-        <div class="left_5_5-1"> <img src="icon/icons.svg"></div>
-        <div class="left_5_5-2"><%=user.extra_skills["4"]%> </div>
-      </div>
-
-     </div>
-
-     <div class="marginer"></div>
+<div class="extra_skills">
+<strong>Extra Skills</strong>
+<div class="skill">
+<img src="/author/icon/Icons.svg" alt="" />
+<p><%=user.extra_skills[0]%></p>
+</div>
+<div class="skill">
+<img src="/author/icon/Icons.svg" alt="" />
+<p><%=user.extra_skills[1]%></p>
+</div>
+<div class="skill">
+<img src="/author/icon/Icons.svg" alt="" />
+<p><%=user.extra_skills[2]%></p>
+</div>
+<div class="skill">
+<img src="/author/icon/Icons.svg" alt="" />
+<p><%=user.extra_skills[3]%></p>
+</div>
+<div class="skill">
+<img src="/author/icon/Icons.svg" alt="" />
+<p><%=user.extra_skills[4]%></p>
+</div>
+</div>
+<div class="margener"></div>
+<button class="cv_download">
+Download cv <img src="/author/icon/Vector (1).svg" alt="" />
+</button>
+</div>
 </div>
 
-  <div class="midd_frame"></div>
-  <div class="right_frame"></div>
+<div class="midd_frame">
+<div class="container">
+<div class="midd_header">
+<div class="header_left">
+<strong>Software Engineer in Seoul</strong>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+suspendisse nunc lectus.
+</p>
+<button class="hire_me">
+HIRE ME <img src="/author/icon/Frame.svg" alt="" />
+</button>
+</div>
+<div class="header_right">
+<img src="/author/images/Your Image 1.svg" alt="" />
+</div>
+<div class="small_patterns">
+<img
+src="/author/icon/orange Ellipse .svg"
+alt=""
+class="i_1"
+/><img
+src="/author/icon/green ellips.svg"
+alt=""
+class="i_2"
+/><img
+src="/author/icon/Rectangle blue.svg"
+alt=""
+class="i_3"
+/><img
+src="/author/icon/green ellips.svg"
+alt=""
+class="i_4"
+/><img
+src="/author/icon/orange Ellipse .svg"
+alt=""
+class="i_5"
+/><img
+src="/author/icon/Rectangle orange.svg"
+alt=""
+class="i_6"
+/><img src="/author/icon/red 3 angle.svg" alt="" class="i_7" />
+</div>
+</div>
+
+<div class="my_services">
+<strong>My Services</strong>
+<p>
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+amet sint. Velit officia consequat duis enim velit mollit. lorem
+ipsum Velit
+</p>
+<div class="service_boxses">
+<div class="sevice_box">
+<img src="/author/box_images/web development.svg" alt="" />
+<span>web development</span>
+<p>blog, e-commerce</p>
+</div>
+<div class="sevice_box">
+<img src="/author/box_images/uiux design.png" alt="" />
+<span>uI/uX design</span>
+<p>Mobile app, website design</p>
+</div>
+<div class="sevice_box">
+<img src="/author/box_images/sound design.svg" alt="" />
+<span>sound design</span>
+<p>Voice Over, Beat Making</p>
+</div>
+<div class="sevice_box">
+<img src="/author/box_images/game design.svg" alt="" />
+<span>game design</span>
+<p>Character Design, Props & Objects</p>
+</div>
+<div class="sevice_box">
+<img src="/author/box_images/photography.svg" alt="" />
+<span>photography</span>
+<p>portrait, product photography</p>
+</div>
+<div class="sevice_box" style="justify-content: space-around">
+<span>advertising</span>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Vitae nulla diam in ac dictum a urna viverra morbi.
+</p>
+<a href="">ORDER NOW ></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="right_frame">
+<div class="night_mode">
+<img src="/author/btn_icon/night.svg" alt="" />
+</div>
+<div class="menu_boxes">
+<div class="menu_box">
+<div class="direction">Home</div>
+<img src="/author/btn_icon/1.svg" alt="" />
+</div>
+<div class="menu_box">
+<div class="direction">Projects</div>
+<img src="/author/btn_icon/2.svg" alt="" />
+</div>
+<div class="menu_box">
+<div class="direction">Education</div>
+<img src="/author/btn_icon/3.svg" alt="" />
+</div>
+<div class="menu_box">
+<div class="direction">Experience</div>
+<img src="/author/btn_icon/4.svg" alt="" />
+</div>
+<div class="menu_box">
+<div class="direction">Tools</div>
+<img src="/author/btn_icon/5.svg" alt="" />
+</div>
+<div class="menu_box">
+<div class="direction">Contact</div>
+<img src="/author/btn_icon/6.svg" alt="" />
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
 </html>
+
