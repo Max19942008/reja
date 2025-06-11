@@ -1,14 +1,51 @@
-// MIT Task -2
-function countDigit(a) {
-  const digits = a.split('').filter((ele, index) => {
-    return ele >= '0' && ele <= '9';
-  });
- console.log("raqamlar:",digits);
- console.log("raqamlar soni:",digits.length);
-
+//TASK -C 
+class Shop {
+  //constructor
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+  
+  qoldiq() {
+    const time = new Date();
+    const hour = time.getHours();
+    const minute = time.getMinutes();
+    console.log(`hozir ${hour} : ${minute} da ${this.non} ta non, ${this.lagmon} ta lagmon va  ${this.cola} ta cola bor`);
+  }
+  
+  sotish(non) {
+    this.non -= non;
+  }
+   
+  qabul(cola){
+    this.cola += cola;
+  }
+  
 }
 
-console.log(countDigit("Bobur1994Max2008"));
+const myShop = new Shop (4, 5, 2);
+
+
+myShop.sotish(3);
+
+
+ 
+myShop.qabul(2);
+myShop.qoldiq();
+
+
+// // MIT Task -B
+// function countDigit(a) {
+//   const digits = a.split('').filter((ele, index) => {
+//     return ele >= '0' && ele <= '9';
+//   });
+//  console.log("raqamlar:",digits);
+//  console.log("raqamlar soni:",digits.length);
+
+// }
+
+// console.log(countDigit("Bobur1994Max2008"));
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
