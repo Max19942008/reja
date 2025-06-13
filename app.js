@@ -49,9 +49,9 @@ db.collection("plans").insertOne({reja:new_reja}, (err,data) => {
 
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
-  console.log(id);
-  res.end("done"); 
-  db.collection("plans").deleteOne({_id:new mongodb.ObjectId(id)}, function(err,data) {
+  // console.log(id);
+  // res.end("done"); 
+  db.collection("plans").deleteOne({ _id: new mongodb.ObjectId(id) }, function(err,data) {
     res.json({state:"success"});
   })
 });

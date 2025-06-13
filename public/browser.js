@@ -38,8 +38,9 @@ document.addEventListener("click", function(e) {
   if(e.target.classList.contains("delete-me")) {
   if (confirm("Aniq ochirmoqchimisiz?")) {
     
-    axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
-    .then((respose) =>{
+    axios
+    .post("/delete-item", {id: e.target.getAttribute("data-id")})
+    .then((respose) => {
       console.log(respose.data);
       e.target.parentElement.parentElement.remove();
     })
