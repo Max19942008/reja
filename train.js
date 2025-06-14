@@ -1,38 +1,54 @@
+// TASK -D
+function checkContent(a, b) {
+  if( typeof a === "string" && typeof b === "string");
+  if(a.length !== b.length) return false
+  const resultA = a.split("").sort().join("");
+  const resultB = b.split("").sort().join("");
+  return resultA === resultB;
+ }
+console.log(checkContent("mitgroup21", "12gmtiprou"));
+
+
+
+
+
+
+
 //TASK -C 
-class Shop {
-  //constructor
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// class Shop {
+//   //constructor
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
   
-  qoldiq() {
-    const time = new Date();
-    const hour = time.getHours();
-    const minute = time.getMinutes();
-    console.log(`hozir ${hour} : ${minute} da ${this.non} ta non, ${this.lagmon} ta lagmon va  ${this.cola} ta cola bor`);
-  }
+//   qoldiq() {
+//     const time = new Date();
+//     const hour = time.getHours();
+//     const minute = time.getMinutes();
+//     console.log(`hozir ${hour} : ${minute} da ${this.non} ta non, ${this.lagmon} ta lagmon va  ${this.cola} ta cola bor`);
+//   }
   
-  sotish(non) {
-    this.non -= non;
-  }
+//   sotish(non) {
+//     this.non -= non;
+//   }
    
-  qabul(cola){
-    this.cola += cola;
-  }
+//   qabul(cola){
+//     this.cola += cola;
+//   }
   
-}
+// }
 
-const myShop = new Shop (4, 5, 2);
+// const myShop = new Shop (4, 5, 2);
 
 
-myShop.sotish(3);
+// myShop.sotish(3);
 
 
  
-myShop.qabul(2);
-myShop.qoldiq();
+// myShop.qabul(2);
+// myShop.qoldiq();
 
 
 // // MIT Task -B
