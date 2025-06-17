@@ -1,12 +1,31 @@
-// TASK -D
-function checkContent(a, b) {
-  if( typeof a === "string" && typeof b === "string");
-  if(a.length !== b.length) return false
-  const resultA = a.split("").sort().join("");
-  const resultB = b.split("").sort().join("");
-  return resultA === resultB;
+// TASK - E
+function reverseString (a) {
+  const split = a.split("");
+  console.log(split);
+  const b = split.reverse();
+  console.log(b);
+  
+  const c = b.join("");
+  console.log(c);
+}
+reverseString("Hellowolrd");
+
+ function reverseString(a) {
+  return a.split("").reverse("").join("")
  }
-console.log(checkContent("mitgroup21", "12gmtiprou"));
+  console.log(reverseString("hello"))
+
+
+
+//  // TASK -D
+// function checkContent(a, b) {
+//   if( typeof a === "string" && typeof b === "string");
+//   if(a.length !== b.length) return false
+//   const resultA = a.split("").sort().join("");
+//   const resultB = b.split("").sort().join("");
+//   return resultA === resultB;
+//  }
+// console.log(checkContent("mitgroup21", "12gmtiprou"));
 
 
 
