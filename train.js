@@ -1,21 +1,39 @@
-// Deploy Reja projeck link
-http://5.183.11.223:4008/
-// TASK - E
-function reverseString (a) {
-  const split = a.split("");
-  console.log(split);
-  const b = split.reverse();
-  console.log(b);
-  
-  const c = b.join("");
-  console.log(c);
-}
-reverseString("Hellowolrd");
+// TASK F
 
- function reverseString(a) {
-  return a.split("").reverse("").join("")
- }
-  console.log(reverseString("hello"))
+function findDoublers( a) {
+  const lw = a.toLowerCase();
+  const split = lw.split("");
+  const b = split.some((ele,index) => split.indexOf(ele) !== index);
+  return b
+}
+
+
+console.log(findDoublers("hello"));
+console.log(findDoublers("Bobur"));
+console.log(findDoublers("BOBUR"));
+
+
+
+
+
+// // Deploy Reja projeck link
+// http://5.183.11.223:4008/
+// // TASK - E
+// function reverseString (a) {
+//   const split = a.split("");
+//   console.log(split);
+//   const b = split.reverse();
+//   console.log(b);
+  
+//   const c = b.join("");
+//   console.log(c);
+// }
+// reverseString("Hellowolrd");
+
+//  function reverseString(a) {
+//   return a.split("").reverse("").join("")
+//  }
+//   console.log(reverseString("hello"))
 
 
 
